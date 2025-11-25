@@ -18,10 +18,10 @@ class _SplashViewState extends State<SplashView> {
   void initState() {
     super.initState();
 
-    // Timer(
-    //   const Duration(seconds: 4),
-    //   () => NavigationService.pushAndRemove(AppRoutes.example),
-    // );
+    Timer(
+      const Duration(seconds: 4),
+      () => NavigationService.pushAndRemove(AppRoutes.example),
+    );
   }
 
   @override
