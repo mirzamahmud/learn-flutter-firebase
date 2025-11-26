@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:learn_flutter_firebase/core/global/extensions/context_extension.dart';
+import 'package:learn_flutter_firebase/core/widgets/buttons/primary_button.dart';
 
 class ExampleView extends StatefulWidget {
   const ExampleView({super.key});
@@ -17,11 +18,15 @@ class _ExampleViewState extends State<ExampleView> {
       ),
       body: SafeArea(
         top: false,
-        child: Center(
+        child: SingleChildScrollView(
+          padding: const EdgeInsetsDirectional.symmetric(
+            vertical: 20,
+            horizontal: 16,
+          ),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.center,
             mainAxisAlignment: MainAxisAlignment.center,
-            children: [Text('Example View')],
+            children: [PrimaryButton(buttonLabel: 'Press On Me')],
           ),
         ),
       ),
